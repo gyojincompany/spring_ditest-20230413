@@ -17,9 +17,7 @@ public class MainClass {
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(ApplicationConfig.class);
 		//컨테이너 생성
 		
-		
-		
-		Student stu1 = ctx.getBean("student2", Student.class);
+		Student stu1 = ctx.getBean("student1", Student.class);
 		
 		System.out.println(stu1.getName());//홍길동
 		
