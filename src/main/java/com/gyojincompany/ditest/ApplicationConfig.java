@@ -1,0 +1,25 @@
+package com.gyojincompany.ditest;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class ApplicationConfig {
+	
+	@Bean
+	public Student student1() {
+		
+		Student student = new Student("김길동", 17, 165, 80);
+		
+		return student;
+	}
+	
+	@Bean
+	public Student student2() {
+		
+		Student student = new Student("이순신", 21, 185, 90);
+		
+		return student;
+	}
+
+}
